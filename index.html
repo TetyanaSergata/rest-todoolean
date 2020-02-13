@@ -9,6 +9,21 @@
     <title>To_do_list</title>
   </head>
   <body>
+    <!-- Campo inserimento -->
+    <div class="search">
+      <input id="input" type="text" name="" value="">
+      <button id="button" type="button" name="button">Search</button>
+    </div>
+    <ol class="list"></ol>
+
+
+    <!-- Template  Handelbars-->
+    <script id="list-template" type="text/x-handlebars-template">
+      <li class="item">
+        {{text}}
+      </li>
+    </script>
+
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
