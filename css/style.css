@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(../img/Empty-Todo-List.jpg);
+  background-size: cover;
+}
+
+.box{
+  width: 500px;
+  height: auto;
+  padding: 30px;
+  font-size: 18px;
+}
+
+.search{
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+#input{
+  height: 25px;
+}
+
+#button{
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 5%;
+}
+
+ol.list{
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.delete{
+  float: right;
+}
+
+.delete:hover {
+  cursor: pointer;
+}

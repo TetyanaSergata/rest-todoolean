@@ -6,21 +6,27 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Handlebars -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
     <title>To_do_list</title>
   </head>
   <body>
     <!-- Campo inserimento -->
-    <div class="search">
-      <input id="input" type="text" name="" value="">
-      <button id="button" type="button" name="button">Search</button>
-    </div>
-    <ol class="list"></ol>
+
+      <div class="box">
+        <div class="search">
+          <input id="input" type="text" name="" value="">
+          <button id="button" type="button" name="button">Add to list</button>
+        </div>
+        <ol class="list"></ol>
+      </div>
 
 
     <!-- Template  Handelbars-->
     <script id="list-template" type="text/x-handlebars-template">
-      <li class="item">
+      <li class="item" data-id="{{id}}">
         {{text}}
+        <div class="delete">x</div>
       </li>
     </script>
 
